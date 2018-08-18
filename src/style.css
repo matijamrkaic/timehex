@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100");
+
+body {
+	margin: 0;
+	font-family: "Lato", sans-serif;
+	font-weight: 100;
+	text-align: center;
+}
+
+#app time {
+	display: block;
+	color: transparent;
+	font-size: 0;
+	height: 15px;
+	line-height: 15px;
+	border-bottom: 1px solid rgba(255,255,255,0.02);
+	pointer-events: none;
+}
+
+#app time:first-child,
+#app time.mark-hour {
+	height: 150px;
+	line-height: 150px;
+	font-size: 42px;
+	color: #fff;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+#app time.mark-minute:not(:first-child),
+#app time.mark-hour:not(:first-child) {
+	font-size: 12px;
+	color: rgba(255,255,255,0.3);
+}
